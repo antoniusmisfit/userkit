@@ -15,3 +15,4 @@ userkit login
 
 TODO:
 * Add an "admin" command to approximate "system administrator" mode.
+* User password management.
