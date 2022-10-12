@@ -13,6 +13,9 @@ userkit rmuser [username]
 Login as a user:
 userkit login
 
+List regular users:
+userkit users
+
 TODO:
 * Add an "admin" command to approximate "system administrator" mode.
 * User password management.
