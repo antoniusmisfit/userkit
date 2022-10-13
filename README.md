@@ -16,7 +16,7 @@ userkit login
 List regular users:
 userkit users
 
-TODO:
+#### TODO
 * Add an "admin" command to approximate "system administrator" mode.
 * User password management.
 * User access control.
