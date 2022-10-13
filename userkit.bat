@@ -28,9 +28,10 @@ deltree /y c:\users\%2
 END
 :Login
 rem User login to the system
-set /p user=User:
-if not exist c:\users\%user%\user.id goto Login
-cd c:\users\%user%
-call c:\users\%user%\userexec.bat
+set /p usr=User:
+if not exist c:\users\%usr%\user.id goto Login
+cd c:\users\%usr%
+call c:\users\%usr%\userexec.bat
+set user=
 goto END
 :END
