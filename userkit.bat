@@ -32,6 +32,6 @@ set /p usr=User:
 if not exist c:\users\%usr%\user.id goto Login
 cd c:\users\%usr%
 call c:\users\%usr%\userexec.bat
-set user=
+set usr=
 goto END
 :END
