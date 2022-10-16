@@ -26,7 +26,7 @@ goto END
 rem Remove a user from the system
 if not exist c:\users\%2\user.id goto END
 deltree /y c:\users\%2
-END
+goto END
 :Login
 rem User login to the system
 set /p usr=User:
