@@ -4,6 +4,7 @@ if "%1"=="adduser" goto AddUser
 if "%1"=="rmuser" goto RmUser
 if "%1"=="login" goto Login
 if "%1"=="users" goto ListUsers
+if "%1"=="" goto END
 
 :ListUsers
 rem Lists regular users on the system
