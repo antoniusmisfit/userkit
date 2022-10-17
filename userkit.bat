@@ -8,13 +8,14 @@ if "%1"=="" goto END
 
 :ListUsers
 rem Lists regular users on the system
-dir /l /b c:\users
+dir /l /b /a:hd c:\users
 goto END
 
 :AddUser
 rem Add a user to the system
 mkdir c:\users
 mkdir c:\users\%2
+attrib +h c:\users\%2
 echo. > c:\users\%2\user.id
 echo @echo off > c:\users\%2\userexec.bat
 echo prompt $l%2@$p$g >> c:\users\%2\userexec.bat
