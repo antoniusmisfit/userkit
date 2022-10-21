@@ -3,7 +3,7 @@
 ### Installation
 Just place userkit.bat anywhere in your DOS environment's PATH.
 You can add "userkit login" to the end of C:\FDAUTO.BAT to login upon bootup, but you must have created at least one regular user before doing this.
-Note: UserKit will not work with any Windows versions after 3.1. Only FreeDOS, MS-DOS and DR-DOS are supported.
+Note: UserKit currently only works with FreeDOS.
 ### Usage
 Create a new user:
 userkit adduser [username]
@@ -21,3 +21,4 @@ userkit users
 * Add an "admin" command to approximate "system administrator" mode.
 * User password management.
 * User access control.
+* MS-DOS and DR-DOS compatibility support.
