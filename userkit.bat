@@ -16,7 +16,7 @@ rem Add a user to the system
 mkdir c:\users
 mkdir c:\users\%2
 attrib +h c:\users\%2
-echo. > c:\users\%2\user.id
+copy nul c:\users\%2\user.id
 echo @echo off > c:\users\%2\userexec.bat
 echo prompt $l%2@$p$g >> c:\users\%2\userexec.bat
 echo set user=%2 >> c:\users\%2\userexec.bat
