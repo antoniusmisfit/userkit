@@ -5,10 +5,11 @@ if "%1"=="rmuser" goto RmUser
 if "%1"=="login" goto Login
 if "%1"=="users" goto ListUsers
 if "%1"=="setup" goto Setup
+if "%1"=="logout" goto Logout
 if "%1"=="" goto END
 
 :Setup
-Rem Setup user and password database(to be implemented soon)
+rem Setup user and password database(to be implemented soon)
 goto END
 
 :ListUsers
@@ -40,5 +41,11 @@ if not exist c:\users\%usr%\user.id goto Login
 cd c:\users\%usr%
 call c:\users\%usr%\userexec.bat
 set usr=
+goto END
+:Logout
+rem Logout and return to "classic" DOS mode
+set user=
+set home=
+prompt
 goto END
 :END
