@@ -17,6 +17,9 @@ userkit login
 List regular users:
 userkit users
 
+Logout and return to "classic" DOS mode:
+userkit logout
+
 #### TODO
 * Add an "admin" command to approximate "system administrator" mode.
 * User password management.
