@@ -1,5 +1,6 @@
 # UserKit
 ## A rudimentary user account manager for FreeDOS
+Update: This project has been redesigned and all future development is at https://github.com/antoniusmisfit/userkit2
 ### Installation
 Just place userkit.bat anywhere in your DOS environment's PATH.
 You can add "userkit login" to the end of C:\FDAUTO.BAT to login upon bootup, but you must create at least one regular user before doing this.
